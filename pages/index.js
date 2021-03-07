@@ -1,4 +1,5 @@
 import { useState } from "react"
+import Link from "next/link"
 
 function Contador(){
     var numero = 0
@@ -11,6 +12,7 @@ function Contador(){
 
     return (
         <div>
+
             {numero}
             <br></br>
             <button type="button" onClick={funcao}>Click</button>
@@ -25,8 +27,13 @@ export default function Home (){
         <div>
             <h1>
                 Olá mundo
-                <Contador/>
             </h1>
+
+            <h3>Primeira página</h3>
+            <Link href="segundo"><a href="/segundo">Segunda</a></Link>
+            
+            <Contador/>
+            
         </div>
 
     )
